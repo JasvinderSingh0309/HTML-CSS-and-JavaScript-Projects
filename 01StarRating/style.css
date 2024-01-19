@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(254, 183, 106, 0.785);
+}
+.con{
+  background-color: white;
+  padding:20px 30px;
+  max-width: 300px;
+  width:100%;
+  box-shadow: 0 4px 4px rgba(94, 93, 93, 0.4);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.con div{
+  color:rgb(212, 212, 212);
+}
+.con .ask{
+  font:bold 18px arial; 
+}
+.con .star{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+.star i{
+  font-size: 40px;
+  cursor:grab;
+  transition: all 0.2s;
+}
+.active{
+  color:rgb(255, 149, 27);
+}
