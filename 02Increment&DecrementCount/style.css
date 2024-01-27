@@ -1,0 +1,48 @@
+body{
+  height:100vh;
+  display: grid;
+  place-items: center;
+  font-family: arial;
+  background:rgb(30, 53, 142);
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  height:70px;
+  width:100%;
+  max-width: 200px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.container button ,
+.container p{
+  flex:1;
+  color:rgb(30, 53, 142);
+}
+
+.container button,
+.container p{
+  height:45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  background: transparent;
+  font:700 40px arial;
+}
+.container p{
+  font-weight: 500;
+  font-size: 40px;
+
+  /*  */
+  border-width:0 2px 0px 2px;
+  border-style:solid;
+  border-color: rgb(136, 158, 245);
+}
