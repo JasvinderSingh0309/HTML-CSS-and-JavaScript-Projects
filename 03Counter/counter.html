@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , inital-scale=1.0">
+    <title>Counter</title>
+  </head>
+  <body style="margin:0;">
+    <div style="
+      height:100vh;
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      align-items:center;">
+      <div class="aa" style="
+        background-color:black;
+        border-radius:6px;
+        padding:10px;
+        font-size:50px;
+        color:white;
+      ">0</div>
+      <div class="bb" style="
+        background-color:black;
+        border-radius:6px;
+        padding:10px;
+        font-size:50px;
+        color:white;
+      ">0</div>
+    </div>
+    
+    <script>
+      let a = document.querySelector('.aa');
+      let b = document.querySelector('.bb');
+      let a1 = a.innerText;
+      function count(a2) {
+        setInterval( () => {
+          if(a2<=59) {
+            b.innerText = a2%10;
+            a.innerText = Math.floor(a2/10);
+            a2 = ++a2;
+          }
+        }, 1000);
+      }
+      count(a1);
+    </script>
+  </body>
+</html>
