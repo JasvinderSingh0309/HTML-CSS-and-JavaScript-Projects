@@ -1,0 +1,62 @@
+body{
+  height:100vh;
+  display:grid;
+  place-items: center;
+  background:linear-gradient(to right, rgb(54, 54, 193), rgb(121, 121, 255));
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 400px;
+  width:100%;
+  background:white;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+
+  border-radius: 10px;
+}
+.container .pageNumbers{
+  width:55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  color: rgb(6, 6, 156);
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font:500 16px arial;
+}
+.container button{
+  height:40px;
+  width:40px;
+  cursor: pointer;
+}
+.pageNumbers button{
+  height:36px;
+  width:36px;
+}
+.container>button{
+  font-weight: 700;
+}
+.currPage{
+  background-color: rgb(66, 66, 194);
+  color:white;
+}
+.op{ 
+  opacity:0.2;
+}
+
+
+
+/* can use " column-gap:5px; " to add gap instead of justify-content:space-between; 
+no width needed, no max-width. */
